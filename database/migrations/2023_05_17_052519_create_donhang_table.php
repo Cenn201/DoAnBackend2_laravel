@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->double('tongtien');
             $table->integer('id_user')->nullable();
+            $table->integer('trangthai')->nullable();
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });

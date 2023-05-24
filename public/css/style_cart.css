@@ -1,0 +1,16 @@
+.product_item{
+    padding-right: 100px!important;
+}
+/* icon */
+.icon__book a{
+    padding: 0 10px;
+    color: #df404e;
+}
+/* css cart */
+.payment_cart_right{
+    display: flex;
+    justify-content: flex-end;
+}
+.payment_cart_right button {
+    margin-right: 14px;
+}

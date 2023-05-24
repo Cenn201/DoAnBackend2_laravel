@@ -5,19 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DonHang extends Model
+class DiaChi extends Model
 {
     use HasFactory;
-    protected $table="DonHang";
+    protected $table = 'diachi';
     protected $fillable = [
-        'tongtien',
         'id_user',
-        'trangthai'
+        'tinh',
+        'huyen',
+        'xa',
+        'cuThe',
     ];
-    public function donhangchitiet()
-    {
-        return $this->hasMany(DonHangChiTiet::class , 'id_donhang');
-    }
     public function user()
     {
         return $this->belongsTo(User::class, 'id_user');
